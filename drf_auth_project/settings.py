@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
     "rest_framework",
     "corsheaders",
-    
+    "accounts",
     "things",
 ]
 
@@ -126,7 +126,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
-# AUTH_USER_MODEL = "accounts.CustomUser"
+AUTH_USER_MODEL = "accounts.CustomUser"
 
 
 # Default primary key field type
